@@ -1,0 +1,352 @@
+﻿
+@{
+    ViewBag.Title = "JSExercise";
+}
+
+<h2>JSExercise</h2>
+
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">JavaScript Exercises</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#math">Math</a></li>
+                    <li><a data-toggle="tab" href="#factorial">Factorial</a></li>
+                    <li><a data-toggle="tab" href="#fizzbuzz">FizzBuzz</a></li>
+                    <li><a data-toggle="tab" href="#palindrome">Palindrome</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="math" class="tab-pane fade in active">
+                        <h3>Math</h3>
+                        <div class="row">
+                            <div class="col-md-12"><h4>Put in 5 numbers</h4></div>
+                        </div>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Number 1:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="input1" type="number" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Number 2:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="input2" type="number" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Number 3:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="input3" type="number" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Number 4:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="input4" type="number" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        Number 5:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="input5" type="number" />
+                                    </div>
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <button id="btnmath" class="btn btn-primary">Calculate</button>
+                                    </div>
+                                    @*<div class="col-md-10">
+                                        <button id="showCode" class="btn btn-warning">Show Code</button>
+                                    </div>*@
+                                </div>
+                            </div>
+                            @**@
+                            <div class="col-md-5">
+                                <div class-"row">
+                                    <div class="col-md-12">
+                                        <p id="sum"></p>
+                                    </div>
+                                </div>
+                                <div class-"row">
+                                    <div class="col-md-12">
+                                        <p id="product"></p>
+                                    </div>
+                                </div>
+                                <div class-"row">
+                                    <div class="col-md-12">
+                                        <p id="smallest"></p>
+                                    </div>
+                                </div>
+                                <div class-"row">
+                                    <div class="col-md-12">
+                                        <p id="largest"></p>
+                                    </div>
+                                </div>
+                                <div class-"row">
+                                    <div class="col-md-12">
+                                        <p id="average"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="factorial" class="tab-pane fade">
+                        <h3>Factorial</h3>
+                        <div class="row">
+                            <div class="col-md-12"><h4>Put in a number and it will return a factorial of this number.</h4></div>
+                        </div>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                Enter Number:
+                                            </div>
+                                        </div>
+                                        <br /><br />
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button id="btnFacto" class="btn btn-primary">click</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="factoNum" type="number" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-mid-5">
+                                <p id="result"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fizzbuzz" class="tab-pane fade">
+                        <h3>FizzBuzz</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Enter a number in each column. Of the digits from 1 to 100, if it is a multiple of the first digits, it is fizz, if it is a multiple of the second digits, it is a buzz, and if it is a multiple of both, it is fizzbuzz.</h4>
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Enter Number 1:
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Enter Number 2:
+                                    </div>
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button id="btnFizzbuzz" class="btn btn-primary">Start</button>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button id="btnErase" class="btn btn-danger">Clear</button>
+                                    </div>
+                                </div>
+                                <br /><br /><hr />
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input id="fizzNum" type="number" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input id="buzzNum" type="number" />
+                                    </div>
+                                </div>
+                            </div>
+                            <br /><br />
+                        </div>
+                        <div class="row">
+                            <div class="col-mid-12">
+                                @*<p id-"fizzbuzzResult"></p>*@
+                                <div id="fizzbuzzResult"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="palindrome" class="tab-pane fade">
+                        <h3>Palindrome</h3>
+                        <div class="row">
+                            <div class="col-md-12"><h4>Enter a word and this will tell you if it is a palindrome.</h4></div>
+                        </div>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                Enter Word:
+                                            </div>
+                                        </div>
+                                        <br /><br />
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button id="btnPalindrome" class="btn btn-primary">Check</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="inputPalindrome" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-mid-5">
+                                <p id="resultPalindrome"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+
+    <script>
+        //caculate
+        $("#btnmath").click(function () {
+            //First we need to get the user input
+            var num1 = Number($("#input1").val());
+            var num2 = Number($("#input2").val());
+            var num3 = Number($("#input3").val());
+            var num4 = Number($("#input4").val());
+            var num5 = Number($("#input5").val());
+
+            //next we need to perform the necessary calculations
+            var sum = num1 + num2 + num3 + num4 + num5;
+            var product = num1 * num2 * num3 * num4 * num5;
+            var smallest = Math.min(num1, num2, num3, num4, num5);
+            var largest = Math.max(num1, num2, num3, num4, num5);
+            var average = sum / 5;
+
+            //finally we need to ouput the results
+            $("#sum").text("The sum is: " + sum);
+            $("#product").text("The product is: " + product);
+            $("#smallest").text("The smallest is: " + smallest);
+            $("#largest").text("The largest is: " + largest);
+            $("#average").text("The average is: " + average);
+        });
+
+        //factorial
+        $("#btnFacto").click(function () {
+            var factoNum = Number($("#factoNum").val());
+            var answer;
+
+            if (factoNum === 0 || factoNum === 1) {
+                answer = 1;
+            } else if (factoNum < 0) {
+                answer = "Enter a number greater than or equal to zero."
+            } else if (factoNum > 1) {
+                for (i = factoNum - 1; i > 0; i--) {
+                    factoNum = factoNum * i;
+                    answer = factoNum;
+                }
+            }
+            $("#result").text("Answer: " + answer);
+        });
+
+
+        //fizzbuzz
+        $("#btnFizzbuzz").click(function () {
+            var fizzNum = Number($("#fizzNum").val());
+            var buzzNum = Number($("#buzzNum").val());
+            var fizz;
+            var buzz;
+
+            for (var i = 1; i <= 100; i++) {
+                fizz = i % fizzNum;
+                buzz = i % buzzNum;
+                //var numbers = [];
+
+                if (fizz === 0 && buzz === 0) {
+                    $("#fizzbuzzResult").append("<span class='fizzbuzz'>FizzBuzz </span>");
+                    //numbers.push("FizzBuzz");
+                }
+                else {
+                    if (fizz === 0) {
+                        
+                        $("#fizzbuzzResult").append("<span class='fizz'>Fizz </span>");
+                        //numbers.push("Fizz");
+                    }
+                    else if (buzz === 0) {
+                        
+                        $("#fizzbuzzResult").append("<span class='buzz'>Buzz </span>");
+                        //numbers.push("Buzz");
+
+                    } else if (fizz !==0 && buzz !==0) {
+                        
+                        $("#fizzbuzzResult").append("<span>" + i + ' ' + "</span>");
+                        //numbers.push("i");
+                    }
+                }
+            }
+            //var output = numbers.join(',');
+            //$("#fizzbuzzResult").text(output);
+
+            //$("#fizzbuzzResult").text(numbers.join(','));
+        });
+
+        $("#btnErase").click(function () {
+            $("#fizzbuzzResult").html("");
+        });
+
+        //palinedrome
+        $("#btnPalindrome").click(function () {
+            var str = document.getElementById("inputPalindrome").value;
+            var reverseStr;
+            reverseStr = str.split('').reverse().join('');
+            if (str == reverseStr) {
+                $("#resultPalindrome").text(str + " is a palindrome.");
+            } else if (str != reverseStr) {
+                $("#resultPalindrome").text(str + " is not a palindrome.");
+            }
+        });
+
+        //show code
+        /*$("#showCode").click(function () {
+
+        });*/
+
+    </script>
+}
+
